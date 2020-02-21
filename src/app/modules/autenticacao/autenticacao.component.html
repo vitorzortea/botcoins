@@ -1,0 +1,17 @@
+<section id="login-screen">
+  <div class="main-login anima-slide-down">
+    <form [formGroup]="formLogin">
+      <h1>
+        <img src="/assets/svg/logo-negativa.svg" alt="BotCoin" />
+      </h1>
+      <p>For this demonstration the User is already predetermined. User: johndoe | Password: mypassword</p>
+      <input formControlName="login" type="text" placeholder="User" />
+      <input formControlName="senha" type="password" placeholder="Password" />
+      <button type="submit" (click)="login()">
+        <ng-container>
+          Login
+        </ng-container>
+      </button>
+    </form>
+  </div>
+</section>
