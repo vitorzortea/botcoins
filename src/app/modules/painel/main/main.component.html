@@ -1,0 +1,158 @@
+<div id="main-wallet">
+  <div class="container row">
+
+    <div class="col-xl-6 col-md-12">
+      <div class="box-default principal-info">
+        <h2>Acumulado do mês</h2>
+        <div>
+          <p>Bitcoin</p>
+          <p>{{amountMonth?.amount / 100000000 }}</p>
+        </div>
+        <div>
+          <p>Profit</p>
+          <p [ngClass]="{'positivo': amountMonth.amountPercent > 0, 'negativo': 0 > amountMonth.amountPercent}">
+            {{amountMonth?.amountPercent | number: '1.2-2'}}%
+          </p>
+        </div>
+      </div>
+    </div>
+
+    <div class="col-xl-6 col-md-12">
+      <div class=" box-default principal-info">
+        <h2>Operações do dia 10/20</h2>
+        <div>
+          <p>Bitcoin</p>
+          <p>{{amountMonth?.lastAmount / 100000000 }}</p>
+        </div>
+        <div>
+          <p>Profit</p>
+          <p [ngClass]="{'positivo': amountMonth.lastAmountPercent > 0, 'negativo': 0 > amountMonth.lastAmountPercent}">
+            {{amountMonth?.lastAmountPercent | number: '1.2-2'}}%
+          </p>
+        </div>
+      </div>
+    </div>
+
+    <div  class="col-xl-12">
+      <div class="box-default infos-mercado">
+        <div class="row">
+          <div id="mercado">
+            <p>
+              <i class="fas fa-arrow-circle-up"></i>
+              <span>
+                O Mercado está
+                <strong>Em Alta</strong>
+              </span>
+            </p>
+          </div>
+
+          <div class="main-infos-mercado">
+            <p>Montante usado</p>
+            <p>{{montanteUsado / 100000000}}</p>
+          </div>
+
+          <div class="main-infos-mercado">
+            <p>PROFIT</p>
+            <p>{{openTransaction?.amount / openTransaction?.walletBalance * 100 | number: '1.2-2' }}%</p>
+            <p>{{openTransaction?.amount / 100000000}}</p>
+          </div>
+
+          <div class="main-infos-mercado">
+            <p>LOSS</p>
+            <p class="text-opacity">0.00%</p>
+            <p class="text-opacity">0.00000000</p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="col-xl-3 col-md-12">
+      <div class="box-default controler-loss-gain">
+        <div>
+          <div>
+            <h2>Stop Gain</h2>
+            <span>
+              <label class="check-stop"><input type="checkbox"><span></span></label>
+              <label class="number-stop"><input type="number" min="0" max="100"><span>%</span></label>
+            </span>
+          </div>
+        </div>
+        <div>
+          <div>
+            <h2>Stop Loss</h2>
+            <span>
+              <label class="check-stop"><input type="checkbox"><span></span></label>
+              <label class="number-stop"><input type="number" min="0" max="100"><span>%</span></label>
+            </span>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div  class="col-xl-9 col-md-12">
+      <div class="box-default">
+        <canvas id="canvas">{{ grafico }}</canvas>
+      </div>
+    </div>
+
+    <!--
+      <ng-container *ngIf="walletHistory">
+        <div class="table">
+          <table>
+            <thead>
+              <tr>
+                <th>
+                  Data
+                </th>
+                <th>
+                  Tipo
+                </th>
+                <th>
+                  Montante
+                </th>
+                <th>
+                  Profit
+                </th>
+                <th>
+                  Resultado
+                </th>
+                <th>
+                  Fee Botmex
+                </th>
+                <th>
+                  Status
+                </th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr *ngFor="let wallet of walletHistory">
+                <td>
+                  <p>{{wallet?.timestamp | dateZone: 'diaHoraCurto'}}</p>
+                </td>
+                <td>
+                  <p>{{wallet?.transactType | formatStatus }}</p>
+                </td>
+                <td>
+                  <p>{{wallet?.walletBalance / 100000000}}</p>
+                </td>
+                <td [ngClass]="{'positivo' : (wallet.amount > 0 ), 'negativo' :  !(wallet.amount > 0 )}">
+                  <p>{{wallet?.amount / 100000000 | number: '1.8-8'}}</p>
+                </td>
+                <td>
+                  <p>{{ wallet?.result | number: '1.2-2'}}%</p>
+                </td>
+                <td class="positivo-azul">
+                  <p>{{ wallet?.rate?.value/100000000 | number: '1.8-8'}}</p>
+                </td>
+                <td [ngClass]="{'amarelo-queimado' : (wallet.transactStatus == 'Processing' ), 'negativo' :  (wallet.transactStatus == 'Canceled' )}">
+                  <p>{{wallet?.transactStatus | formatStatus }}</p>
+                </td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </ng-container>
+    -->
+
+  </div>
+</div>
