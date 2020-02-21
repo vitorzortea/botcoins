@@ -31,7 +31,8 @@ export class AutenticacaoComponent implements OnInit {
 
   login() {
     if (this.formLogin.value.login === this.backEnd.user.user && this.formLogin.value.senha === this.backEnd.user.password) {
-      this.backEnd.userSelect = this.backEnd.user;
+      localStorage.setItem('user', JSON.stringify(this.backEnd.user));
+      localStorage.setItem('token', JSON.stringify(this.backEnd.user.token));
       this.router.navigate(['/painel']);
     } else {
       Swal.fire({

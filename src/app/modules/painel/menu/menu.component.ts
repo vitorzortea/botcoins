@@ -17,21 +17,15 @@ export class MenuComponent implements OnInit {
   ) { }
 
   ngOnInit() {
-    this.nome = this.backend.userSelect.name;
-    this.email = this.backend.userSelect.email;
-    // tslint:disable-next-line: max-line-length
-    if (this.backend.userSelect.token !== 'eyJhbGciOiJIUzI4MDczN2U5ZTdkMjkxNDZkNGQiLCJpYXQiOjE1ODIzMDE2MDAsImV4cCI6MTU4MjMwNTIwMH0.C7gw_JGADpsoBY4TeZMa3ecxbvyNwLTh1KATcKJp84Q') {
+    this.nome = this.backend.user.name;
+    this.email = this.backend.user.email;
+    if (localStorage.getItem('token') !== `"${this.backend.user.token}"`) {
       this.router.navigate(['/']);
     }
   }
 
   logout() {
-    this.backend.userSelect._id = '';
-    this.backend.userSelect.name = '';
-    this.backend.userSelect.email = '';
-    this.backend.userSelect.user = '';
-    this.backend.userSelect.password = '';
-    this.backend.userSelect.token = '';
+    localStorage.clear();
     this.router.navigate(['/']);
   }
 
