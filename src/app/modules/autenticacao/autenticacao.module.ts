@@ -6,6 +6,7 @@ import { AutenticacaoComponent } from './autenticacao.component';
 import { ReactiveFormsModule, FormsModule } from '@angular/forms';
 
 
+
 @NgModule({
   declarations: [AutenticacaoComponent],
   exports: [

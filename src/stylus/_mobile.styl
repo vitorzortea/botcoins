@@ -1,0 +1,62 @@
+//===Menu
+header .row
+  justify-content center
+
+  h1
+    padding 0 0 10px
+
+   ul li span
+    text-align center
+    display table
+
+//===Listar Cliente
+.interface-lista
+  flex-wrap wrap-reverse
+
+  &>div:first-child
+    width 100%
+
+    form
+      display flex
+      flex-wrap wrap
+
+      &>*
+        flex auto
+        border-radius 10px !important
+
+  &>div:last-child
+    width 100%
+
+    button
+      width 100%
+      margin-bottom 30px
+
+//===Ver Cliente
+.info-app .row
+  justify-content center
+  text-align center
+
+  .box-infos
+      flex-wrap wrap
+      padding 10px
+
+      &>div
+        padding 10px
+        margin 5px
+        min-width auto
+        flex auto
+
+.resumo-infos
+  .main-op-aberta
+    margin 10px
+    width calc(100% - 20px)
+    max-width calc(100% - 20px)
+    flex 100%
+
+    .dados-op .profit-op, .dados-op .loss-op
+      display inline-table
+      padding 0 10px
+      border none
+
+  #canvas
+    width 100% !important

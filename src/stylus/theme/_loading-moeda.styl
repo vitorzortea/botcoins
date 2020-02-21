@@ -1,0 +1,27 @@
+#loagind-moeda
+  width 100%
+  position relative
+
+  svg
+    width 100%
+    max-width 75px
+    padding 20px
+    display table
+    margin 0 auto
+    animation loading-moeda 2s infinite cubic-bezier(0.26, 0.26, 0.64, 0.63)
+
+  div
+    width 5px
+    height calc(100% - 40px)
+    position absolute
+    top 20px
+    left 50%
+    transform translate(-50%, 0)
+    background laranja
+    border-radius 8px
+
+@keyframes loading-moeda
+  0%
+    transform rotate3d(0, 1, 0, 0deg)
+  100%
+    transform rotate3d(0, 1, 0, 360deg)

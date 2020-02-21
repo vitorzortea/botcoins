@@ -1,0 +1,71 @@
+.header-relatorio
+  display flex
+  justify-content center
+  align-content flex-end
+  flex-wrap wrap
+  padding 10px 0
+  margin 20px 0
+  border-bottom solid 1px escala-cinza-3
+
+  h1
+    flex auto
+    font-size 28px
+    font-weight normal
+
+  label
+    padding 0 10px
+    font-size 14px
+
+  select
+    border solid 1px escala-cinza-5
+    padding 5px 10px
+    min-width 150px
+
+.abas-mes
+  background  escala-cinza-2
+  width 100%
+  overflow auto
+  position relative
+  z-index 2
+  margin-bottom -1px
+
+  ul
+    min-width max-content
+    display flex
+
+    li
+      list-style none
+      flex auto
+      position relative
+      text-align center
+
+      &:not(:last-child):after
+        content ''
+        display table
+        height 1.5em
+        width 1px
+        background rgba(0, 0, 0, 0.15)
+        position absolute
+        top 50%
+        right 0
+        transform translate(0, -50%)
+        z-index 1
+
+      span
+        display table
+        padding 10px
+        width 100%
+        position relative
+        z-index 2
+        cursor default
+
+        &.tab-disabled
+          color rgba(0, 0, 0, 0.2)
+
+        &:not(.tab-disabled):not(.tab-active):hover
+          cursor pointer
+          background rgba(255, 255, 255, 0.5)
+
+        &.tab-active
+          background escala-cinza-3
+          font-weight bold

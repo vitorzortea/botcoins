@@ -1,0 +1,81 @@
+.pop-up
+  position relative
+  z-index -1
+  opacity 0
+
+  &.pop-up-active
+    opacity 1
+    z-index 1
+
+    .main-up
+      animation anima-pop-up 1s
+      animation-fill-mode forwards
+
+.sair-up
+    position fixed
+    top 0
+    left 0
+    width 100vw
+    height 100vh
+    background rgba(0, 0, 0, 0.7)
+    z-index 1000
+
+.main-up
+  max-width 100%
+  background white
+  position fixed
+  top 50%
+  left 50%
+  border-radius 10px
+  overflow hidden
+  transform translate(-50%, -50%)
+  z-index 1001
+  padding 20px
+
+  .fa-times-circle
+    font-size 18px
+    margin 0 0 0 auto
+    display table
+
+
+    &:hover
+      color red
+      cursor pointer
+
+  h1
+    display flex
+    background #1d4690
+    color white
+    font-size 24px
+    padding 10px 20px
+    font-weight 500
+    margin-bottom 10px
+
+    &>span
+      flex auto
+
+    &>i
+      font-size 18px
+      font-weight 900
+
+  &>div
+    padding 20px
+
+    h2
+      font-size 18px
+      font-weight 600
+      margin-bottom 10px
+
+    p
+      font-size 16px
+      color #424242
+
+@keyframes  anima-pop-up
+	from
+		transform translate(-50%, calc(-50% - 20px))
+		opacity 0
+
+	to
+		transform translate(-50%, calc(-50% - 0px))
+		opacity 1
+

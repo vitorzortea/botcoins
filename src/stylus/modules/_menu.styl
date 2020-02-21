@@ -1,0 +1,68 @@
+.menu-principal
+    width 220px
+    height 100%
+    background escala-cinza-2
+    margin-right 20px
+    box-shadow 2px 0px 3px 1px hsla(0, 0%, 0%, 0.2)
+
+    .card-profile
+      padding 30px 10px 50px
+      background escala-cinza-1
+      margin-bottom -20px
+      text-align center
+      font-size 12px
+
+      img
+        display table
+        max-width 150px
+        margin 0 auto 5px
+
+      span img
+        background escala-cinza-1
+        border solid #86af47 3px
+        padding 5px 10px
+        border-radius: 20px
+        max-width 100px
+
+      p:nth-child(3)
+        font-size 18px
+        font-weight bold
+        margin-bottom -5px
+
+      .social-bts
+        padding 10px 0 0
+
+        a
+          display inline-table
+          background #86af47
+          color escala-cinza-1
+          padding 4px 10px
+          border-radius 10px
+          margin 2.5px
+          opacity 0.9
+
+          &:hover
+            opacity 1
+
+    ul
+      background escala-cinza-2
+      border-radius 15px 15px 0 0
+      padding 20px 0
+
+      li:not(:last-child)
+        border-bottom solid escala-cinza-1 1px
+
+      span
+        padding 12px 10px
+        display table
+        width 100%
+        cursor pointer
+        transition 0.5s all
+
+        &:hover:not(.active)
+          background-color escala-cinza-3
+          padding  12px 5px 12px 15px
+
+        &:hover i, &.active i
+          color #86af47
+          font-weight 400

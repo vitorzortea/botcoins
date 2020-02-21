@@ -1,0 +1,63 @@
+.anima-slide-down
+	animation slide-down 1s
+	animation-fill-mode forwards
+
+.anima-slide-up
+	animation slide-up 1s
+	animation-fill-mode forwards
+
+.anima-slide-left
+	animation slide-left 1s
+	animation-fill-mode forwards
+
+.anima-slide-right
+	animation slide-right 1s
+	animation-fill-mode forwards
+
+.anima-fade
+	animation fade 1s
+	animation-fill-mode forwards
+
+@keyframes slide-down
+	from
+		transform translate(0, -20px)
+		opacity 0
+
+	to
+		transform translate(0, 0)
+		opacity 1
+
+@keyframes slide-up
+	from
+		transform translate(0, 20px)
+		opacity 0
+
+	to
+		transform translate(0, 0)
+		opacity 1
+
+@keyframes slide-left
+	from
+		transform translate(20px, 0)
+		opacity 0
+
+	to
+		transform translate(0, 0)
+		opacity 1
+
+@keyframes slide-right
+	from
+		transform translate(-20px, 0)
+		opacity 0
+
+	to
+		transform translate(0, 0)
+		opacity 1
+
+@keyframes fade
+	from
+		opacity 0
+
+	to
+		opacity 1
+

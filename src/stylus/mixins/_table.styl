@@ -1,0 +1,48 @@
+.table
+  width 100%
+  overflow-x auto
+  border solid 1px escala-cinza-4
+
+  table
+   min-width 100%
+   border-collapse: collapse;
+
+  th
+    background escala-cinza-9
+    text-align left
+    padding 10px
+    color escala-cinza-1
+    font-weight normal
+
+  td
+    padding 8px 10px
+    background escala-cinza-1
+
+    &.positivo
+      color verde
+
+    &.negativo
+      color vermelho
+
+    &.positivo-azul
+      color azul-escuro
+
+    &.amarelo-queimado
+      color amarelo-queimado
+
+  tr:nth-child(2n) td
+    background escala-cinza-2
+
+  tbody tr:hover td
+    cursor default
+
+#main-wallet .table
+    margin-top 25px
+    text-transform uppercase
+    text-align center
+
+    th
+      text-align center
+
+
+

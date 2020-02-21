@@ -2,11 +2,17 @@
   <div class="main-login anima-slide-down">
     <form [formGroup]="formLogin">
       <h1>
-        <img src="/assets/svg/logo-negativa.svg" alt="BotCoin" />
+        <img src="/assets/svg/logo.svg" alt="BotCoin" />
       </h1>
-      <p>For this demonstration the User is already predetermined. User: johndoe | Password: mypassword</p>
-      <input formControlName="login" type="text" placeholder="User" />
-      <input formControlName="senha" type="password" placeholder="Password" />
+      <p>For this demonstration the User is already predetermined.<br><strong>User:</strong> johndoe | <strong>Password:</strong> mypassword</p>
+      <div>
+        <i class="fad fa-envelope"></i>
+        <input formControlName="login" type="text" placeholder="User" />
+      </div>
+      <div>
+        <i class="fad fa-lock-alt"></i>
+        <input formControlName="senha" type="password" placeholder="Password" />
+      </div>
       <button type="submit" (click)="login()">
         <ng-container>
           Login

@@ -1,0 +1,227 @@
+#main-wallet .container.row
+  &>*:not(.table)
+    padding 8px
+
+  .box-default
+    background white
+    min-height 100%
+    padding 5px
+    border-radius 15px
+
+  .principal-info
+    background-image url(assets/img/bg-b.png)
+    background-repeat: no-repeat
+    background-position: bottom right
+    background-size: auto 85%
+
+    h2
+     text-transform uppercase
+     font-size 14px
+     padding 0 10px 5px
+
+    &>div
+      display inline-table
+      text-align right
+      padding 10px 20px
+
+      p:first-child
+        font-size 14px
+        text-transform uppercase
+        margin-bottom: -8px;
+
+      p:nth-child(2)
+        font-size 32px
+        font-weight 200
+        -webkit-text-stroke-width 1px
+
+      &:not(:last-child)
+        border-right solid 2px rgba(0,0,0,0.2)
+
+  .controler-loss-gain
+    display flex
+    flex-wrap wrap
+
+    &>div
+      width 100%
+      text-align center
+      display flex
+      flex-wrap wrap
+      align-items center
+      padding 20px 0
+
+      &:not(:last-child)
+        border-bottom solid 2px rgba(0,0,0,0.2)
+
+      &>div
+        width 100%
+
+        span
+          display flex
+          align-items center
+
+        img.img-loagin
+          display table
+          max-width 40px
+          padding 10px
+          margin 0 0 0 auto
+          animation load 0.5s infinite
+
+        .mensage-stop
+          font-size 12px
+          color verde
+          padding-top 10px
+          text-align right
+
+      h2
+        flex 100%
+        width 100%
+        text-transform uppercase
+        font-weight 16px
+        padding-bottom 15px
+
+      .check-stop
+        input
+          display none
+
+        span
+          display table
+          position relative
+          width 50px
+          height 20px
+          margin 0 10px 0 0
+          border solid 1px escala-cinza-5
+          border-radius 10px
+          background-color background-white
+          cursor pointer
+          transition 0.5s all
+
+          &:before
+            content ''
+            display table
+            position absolute
+            width 12px
+            height 12px
+            left 2px
+            top 2px
+            background white
+            border-radius 50%
+            border solid 1px escala-cinza-4
+            transition 0.5s all
+
+        input:checked+span
+          background-color #037e16
+
+          &:before
+            left 32px
+
+      .number-stop
+        flex auto
+        max-width calc(100% - 60px)
+
+        input
+          flex auto
+          max-width calc(100% - 30px)
+          width 100%
+          border solid 1px escala-cinza-4
+          border-radius 10px 0 0 10px
+          display inline-table
+          text-align right
+
+          &:disabled
+            background background-white
+            color escala-cinza-5
+
+        span
+          display inline-table
+          border solid 1px escala-cinza-5
+          border-radius 0 10px 10px 0
+          background-color background-white
+          width 30px
+
+  .infos-mercado .row
+    align-items center
+
+    &>*
+      flex auto
+      text-align center
+
+      &:not(:last-child)
+        border-right solid 1px black
+
+      &.main-infos-mercado
+        padding 10px
+
+        p:first-child
+          text-transform uppercase
+          font-size 12px
+          margin-bottom -5px
+
+        p:nth-child(2)
+          font-weight bolder
+          font-size 18px
+          margin-bottom -5px
+
+        p:nth-child(3)
+          font-size 12px
+
+      &>a
+        display table
+        padding 5px 20px
+        background-color laranja
+        color white
+        cursor pointer
+        margin 0 auto
+        border-radius 20px
+        opacity 0.9
+
+        &:hover
+          opacity 1
+
+
+
+  #mercado p
+    display flex
+    align-items center
+    justify-content center
+    font-size 12px
+    line-height 1.5em
+    text-transform uppercase
+
+    strong
+      display table
+      font-size 22px
+
+    i
+      font-size 30px
+      margin-right 5px
+      color white
+      border-radius 50%
+      width 40px
+      height 40px
+      display flex
+      align-items center
+      justify-content center
+
+      &::before
+        transform translate(0px, 1px)
+
+      &.fa-arrow-circle-down
+        background linear-gradient(45deg, #ce0f0f 0%,#9e1515 100%)
+
+      &.fa-arrow-circle-up
+        background linear-gradient(45deg, #00890f 0%,#00720f 100%)
+
+#canvas
+  max-width 700px
+  max-height 300px
+  margin 0 auto
+
+
+@keyframes load
+	from
+		transform: rotate(0deg);
+
+	to
+		transform: rotate(360deg);
+
+
