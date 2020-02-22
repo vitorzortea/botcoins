@@ -1,6 +1,6 @@
 # Botcoins
 
-[![Veja o video!](https://raw.githubusercontent.com/vitorzortea/botcoins/blob/master/src/assets/img/videogif.gif)](https://www.youtube.com/watch?v=eN1kmT7T06c&feature=youtu.be)
+[![Veja o video!](/vitorzortea/botcoins/blob/master/src/assets/img/videogif.gif?raw=true)](https://www.youtube.com/watch?v=eN1kmT7T06c&feature=youtu.be)
 
 Projeto demostrativo de um sistema em Angular para leitura e geração de relatório de um investidor em Bitcoin
 
