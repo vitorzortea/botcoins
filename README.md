@@ -1,29 +1,23 @@
 # Botcoins
 
-[![Watch the video](https://i.imgur.com/vKb2F1B.png)](https://www.youtube.com/watch?v=eN1kmT7T06c&feature=youtu.be)
+[![Watch the video](https://i.ibb.co/Wk1tncd/Botcoins.gif)](https://www.youtube.com/watch?v=eN1kmT7T06c&feature=youtu.be)
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 8.3.8.
+Projeto demostrativo de um sistema em Angular para leitura e geração de relatório de um investidor em Bitcoin
 
-## Development server
+## Front-end
 
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The app will automatically reload if you change any of the source files.
+Para o Front-end utilizei do Angular, Font Awesome e Chart.js.
 
-## Code scaffolding
+O Css foi pré-processado pelo Stylus onde utilizei recurso como repetições e criação de variáveis. A grid e alinhamento através de flex-box
 
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
-
-## Build
-
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory. Use the `--prod` flag for a production build.
-
-## Running unit tests
-
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
-
-## Running end-to-end tests
-
-Run `ng e2e` to execute the end-to-end tests via [Protractor](http://www.protractortest.org/).
+No angular tenho a arquitetura de dois módulos principais:
+1- Autenticação, onde está o componente de login e futuramente poderá entrar os componentes "Esqueci a Senha" e o "Criar Usuário".
+2-Painel, onde tem os componentes de menu e todas as páginas presente na ferramente. Para essa demostração terá somente uma página
 
 ## Further help
 
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI README](https://github.com/angular/angular-cli/blob/master/README.md).
+Essa demostração é somente para o Front-end. Então simulei um Back-end em um serviço do angular onde fornecerá todas as informações, em um objeto, como uma API forneceria, em um Json.
+
+## Contato
+
+Para mais informações ou contato: [Site Pessoal](http://vitorzortea.sitepessoal.com/) |[Watsapp](https://api.whatsapp.com/send?phone=5563984605450) | [Linkedin](https://www.linkedin.com/in/vitor-zort%C3%A9a-64478411b/)
