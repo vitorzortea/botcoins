@@ -14,7 +14,7 @@ No angular tenho a arquitetura de dois módulos principais:
 1- Autenticação, onde está o componente de login e futuramente poderá entrar os componentes "Esqueci a Senha" e o "Criar Usuário".
 2-Painel, onde tem os componentes de menu e todas as páginas presente na ferramente. Para essa demostração terá somente uma página
 
-## Further help
+## Back-end
 
 Essa demostração é somente para o Front-end. Então simulei um Back-end em um serviço do angular onde fornecerá todas as informações, em um objeto, como uma API forneceria, em um Json.
 
