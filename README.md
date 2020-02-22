@@ -1,5 +1,7 @@
 # Botcoins
 
+[![Watch the video](https://i.imgur.com/vKb2F1B.png)](https://www.youtube.com/watch?v=eN1kmT7T06c&feature=youtu.be)
+
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 8.3.8.
 
 ## Development server
