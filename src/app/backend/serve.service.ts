@@ -8,7 +8,6 @@ import { Injectable } from '@angular/core';
 })
 export class ServeService {
   public user = Dados.user;
-  public userSelect = Dados.userLogin;
 
   public wallet = Wallet.wallet;
   public operacoes = Wallet.operacoes;

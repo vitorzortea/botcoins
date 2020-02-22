@@ -138,9 +138,9 @@ export class Wallet {
     {
       date: '16//02/20 09:00',
       type: 'Trading',
-      montante: 3.21730617,
-      profit: -0.65424132,
-      result: -20.34,
+      montante: 3.27506886,
+      profit: -0.17237204,
+      result: -5,
       fee: 0.00000000,
       status: 'Completed',
     },
@@ -192,10 +192,10 @@ export class Wallet {
     {
       date: '22//02/20 09:00',
       type: 'Trading',
-      montante: 3.4332811,
-      profit: -1.58874484,
-      result: -46.27,
-      fee: 0.00000000,
+      montante: 3.44744091,
+      profit: 0.23013474,
+      result: 6.68,
+      fee: 0.02301347,
       status: 'Completed',
     },
     {
@@ -283,11 +283,11 @@ export class Wallet {
 
   public static stopLoss = {
     isActive: 'true',
-    valuer: 5
+    value: 5
   };
 
   public static stopGain = {
     isActive: 'false',
-    valuer: 0
+    value: 0
   };
 }
